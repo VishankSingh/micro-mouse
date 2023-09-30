@@ -34,7 +34,6 @@ int main()
         {
             if (r_wallcheck == 0) {
                 right(); o--;
-                forward(); x++;
             }
             else if (f_wallcheck == 0)
             {
@@ -43,7 +42,6 @@ int main()
             else if (l_wallcheck == 0)
             {
                 left(); o++;
-                forward(); x--;
             }
         }
 
@@ -52,7 +50,6 @@ int main()
             if (l_wallcheck == 0)
             {
                 left(); o++;
-                forward(); y++;
             }
             else if (f_wallcheck == 0)
             {
@@ -61,7 +58,6 @@ int main()
             else if (r_wallcheck == 0)
             {
                 right(); o--;
-                forward(); y--;
             }
         }
 
@@ -74,12 +70,10 @@ int main()
             else if (l_wallcheck == 0)
             {
                 left(); o++;
-                forward(); x++;
             }
             else if (r_wallcheck == 0)
             {
                 right(); o--;
-                forward(); x--;
             }
         }
 
@@ -92,12 +86,10 @@ int main()
             else if (r_wallcheck == 0)
             {
                 right(); o--;
-                forward(); y++;
             }
             else if (l_wallcheck == 0)
             {
                 left(); o++;
-                forward(); y--;
             }
         }
     }
@@ -109,7 +101,6 @@ int main()
             if (r_wallcheck == 0)
             {
                 right(); o--;
-                forward(); x++;
             }
             else if (f_wallcheck == 0)
             {
@@ -118,7 +109,6 @@ int main()
             else if (l_wallcheck == 0)
             {
                 left(); o++;
-                forward(); x--;
             }
         }
 
@@ -127,7 +117,6 @@ int main()
             if (l_wallcheck == 0)
             {
                 left(); o++;
-                forward(); y--;
             }
             else if (f_wallcheck == 0)
             {
@@ -136,7 +125,6 @@ int main()
             else if (r_wallcheck == 0)
             {
                 right(); o--;
-                forward(); y++;
             }
         }
 
@@ -149,12 +137,10 @@ int main()
             else if (l_wallcheck == 0)
             {
                 left(); o++;
-                forward(); x++;
             }
             else if (r_wallcheck == 0)
             {
                 right(); o--;
-                forward(); x--;
             } 
         }
 
@@ -163,7 +149,6 @@ int main()
             if (r_wallcheck == 0)
             {
                 right(); o--;
-                forward(); y++;
             }
             else if (f_wallcheck == 0)
             {
@@ -172,7 +157,6 @@ int main()
             else if (l_wallcheck == 0)
             {
                 left(); o++;
-                forward(); y--;
             }
         }
     }
@@ -184,7 +168,6 @@ int main()
             if (l_wallcheck == 0)
             {
                 left(); o++;
-                forward(); x--;
             }
             else if (f_wallcheck == 0)
             {
@@ -193,7 +176,6 @@ int main()
             else if (r_wallcheck == 0)
             {
                 right(); o--;
-                forward(); x++;
             }
         }
 
@@ -202,7 +184,6 @@ int main()
             if (l_wallcheck == 0)
             {
                 left(); o++;
-                forward(); y++;
             }
             else if (f_wallcheck == 0)
             {
@@ -211,7 +192,6 @@ int main()
             else if (r_wallcheck == 0)
             {
                 right(); o--;
-                forward(); y--;
             }
         }
 
@@ -224,12 +204,10 @@ int main()
             else if (r_wallcheck == 0)
             {
                 right(); o--;
-                forward(); x--;
             }
             else if (l_wallcheck == 0)
             {
                 left(); o++;
-                forward(); x++;
             }
         }
 
@@ -238,7 +216,6 @@ int main()
             if (r_wallcheck == 0)
             {
                 right(); o--;
-                forward(); y++;
             }
             else if (f_wallcheck == 0)
             {
@@ -247,7 +224,6 @@ int main()
             else if (l_wallcheck == 0)
             {
                 left(); o++;
-                forward(); y--;
             }
         }
     }
@@ -259,7 +235,6 @@ int main()
             if (l_wallcheck == 0)
             {
                 left(); o++;
-                forward(); x--;
             }
             else if (f_wallcheck == 0)
             {
@@ -268,7 +243,6 @@ int main()
             else if (r_wallcheck == 0)
             {
                 right(); o--;
-                forward(); x++;
             }
             
         }
@@ -282,12 +256,10 @@ int main()
             else if (l_wallcheck == 0)
             {
                 left(); o++;
-                forward(); y++;
             }
             else if (r_wallcheck == 0)
             {
                 right(); o--;
-                forward(); y--;
             }
         }
 
@@ -300,12 +272,10 @@ int main()
             else if (r_wallcheck == 0)
             {
                 right(); o--;
-                forward(); x--;
             }
             else if (l_wallcheck == 0)
             {
                 left(); o++;
-                forward(); x++;
             }
         }
 
@@ -314,7 +284,6 @@ int main()
             if (r_wallcheck == 0)
             {
                 right(); o--;
-                forward(); y++;
             }
             else if (f_wallcheck == 0)
             {
@@ -323,7 +292,6 @@ int main()
             else if (l_wallcheck == 0)
             {
                 left(); o++;
-                forward(); y--;
             }
             
         }
@@ -333,22 +301,66 @@ int main()
     {
         if (o==0)
         {
-            
+            if (r_wallcheck == 0)
+            {
+                right(); o--;
+            }
+            else if (f_wallcheck == 0)
+            {
+                forward(); y--;
+            }
+            else if (l_wallcheck == 0)
+            {
+                left(); o++;
+            }        
         }
 
         if (o==1)
         {
-            
+            if (l_wallcheck == 0)
+            {
+                left(); o++;
+            }
+            else if (f_wallcheck == 0)
+            {
+                forward(); x--;
+            }
+            else if (r_wallcheck == 0)
+            {
+                right(); o--;
+            }
         }
 
         if (o==2)
         {
-            
+            if (l_wallcheck == 0)
+            {
+                left(); o++;
+            }
+            else if (f_wallcheck == 0)
+            {
+                forward(); y++;
+            }
+            else if (r_wallcheck == 0)
+            {
+                right(); o--;
+            }
         }
 
         if (o==3)
         {
-            
+            if (f_wallcheck == 0)
+            {
+                forward(); x++;
+            }
+            else if (r_wallcheck == 0)
+            {
+                right(); o--;
+            }
+            else if (l_wallcheck == 0)
+            {
+                left(); o++;
+            }
         }
     }
 
@@ -356,173 +368,65 @@ int main()
     {
         if (o==0)
         {
-            if (l_wallcheck == 1 && f_wallcheck == 1 && r_wallcheck == 1)
+            if (r_wallcheck == 0)
             {
-                ;
+                right(); o--;
             }
-
-            else if (l_wallcheck == 1 && f_wallcheck == 1 && r_wallcheck == 0)
+            else if (f_wallcheck == 0)
             {
-                ;
+                forward(); y--;
             }
-
-            else if (l_wallcheck == 1 && f_wallcheck == 0 && r_wallcheck == 1)
+            else if (l_wallcheck == 0)
             {
-                ;
-            }
-
-            else if (l_wallcheck == 0 && f_wallcheck == 1 && r_wallcheck == 1)
-            {
-                ;
-            }
-
-            else if (l_wallcheck == 0 && f_wallcheck == 0 && r_wallcheck == 1)
-            {
-                ;
-            }
-
-            else if (l_wallcheck == 0 && f_wallcheck == 1 && r_wallcheck == 0)
-            {
-                ;
-            }
-
-            else if (l_wallcheck == 1 && f_wallcheck == 0 && r_wallcheck == 0)
-            {
-                ;
-            }
-
-            else if (l_wallcheck == 0 && f_wallcheck == 0 && r_wallcheck == 0)
-            {
-                ;
+                left(); o++;
             }
         }
 
         if (o==1)
         {
-            if (l_wallcheck == 1 && f_wallcheck == 1 && r_wallcheck == 1)
+            if (r_wallcheck == 0)
             {
-                ;
+                right(); o--;
             }
-
-            else if (l_wallcheck == 1 && f_wallcheck == 1 && r_wallcheck == 0)
+            else if (f_wallcheck == 0)
             {
-                ;
+                forward(); x--;
             }
-
-            else if (l_wallcheck == 1 && f_wallcheck == 0 && r_wallcheck == 1)
+            else if (l_wallcheck == 0)
             {
-                ;
-            }
-
-            else if (l_wallcheck == 0 && f_wallcheck == 1 && r_wallcheck == 1)
-            {
-                ;
-            }
-
-            else if (l_wallcheck == 0 && f_wallcheck == 0 && r_wallcheck == 1)
-            {
-                ;
-            }
-
-            else if (l_wallcheck == 0 && f_wallcheck == 1 && r_wallcheck == 0)
-            {
-                ;
-            }
-
-            else if (l_wallcheck == 1 && f_wallcheck == 0 && r_wallcheck == 0)
-            {
-                ;
-            }
-
-            else if (l_wallcheck == 0 && f_wallcheck == 0 && r_wallcheck == 0)
-            {
-                ;
+                left(); o++;
             }
         }
 
         if (o==2)
         {
-            if (l_wallcheck == 1 && f_wallcheck == 1 && r_wallcheck == 1)
+            if (l_wallcheck == 0)
             {
-                ;
+                left(); o++;
             }
-
-            else if (l_wallcheck == 1 && f_wallcheck == 1 && r_wallcheck == 0)
+            else if (f_wallcheck == 0)
             {
-                ;
+                forward(); y++;
             }
-
-            else if (l_wallcheck == 1 && f_wallcheck == 0 && r_wallcheck == 1)
+            else if (r_wallcheck == 0)
             {
-                ;
-            }
-
-            else if (l_wallcheck == 0 && f_wallcheck == 1 && r_wallcheck == 1)
-            {
-                ;
-            }
-
-            else if (l_wallcheck == 0 && f_wallcheck == 0 && r_wallcheck == 1)
-            {
-                ;
-            }
-
-            else if (l_wallcheck == 0 && f_wallcheck == 1 && r_wallcheck == 0)
-            {
-                ;
-            }
-
-            else if (l_wallcheck == 1 && f_wallcheck == 0 && r_wallcheck == 0)
-            {
-                ;
-            }
-
-            else if (l_wallcheck == 0 && f_wallcheck == 0 && r_wallcheck == 0)
-            {
-                ;
+                right(); o--;
             }
         }
 
         if (o==3)
         {
-            if (l_wallcheck == 1 && f_wallcheck == 1 && r_wallcheck == 1)
+            if (f_wallcheck == 0)
             {
-                ;
+                forward(); x++;
             }
-
-            else if (l_wallcheck == 1 && f_wallcheck == 1 && r_wallcheck == 0)
+            else if (l_wallcheck == 0)
             {
-                ;
+                left(); o++;
             }
-
-            else if (l_wallcheck == 1 && f_wallcheck == 0 && r_wallcheck == 1)
+            else if (r_wallcheck == 0)
             {
-                ;
-            }
-
-            else if (l_wallcheck == 0 && f_wallcheck == 1 && r_wallcheck == 1)
-            {
-                ;
-            }
-
-            else if (l_wallcheck == 0 && f_wallcheck == 0 && r_wallcheck == 1)
-            {
-                ;
-            }
-
-            else if (l_wallcheck == 0 && f_wallcheck == 1 && r_wallcheck == 0)
-            {
-                ;
-            }
-
-            else if (l_wallcheck == 1 && f_wallcheck == 0 && r_wallcheck == 0)
-            {
-                ;
-            }
-
-            else if (l_wallcheck == 0 && f_wallcheck == 0 && r_wallcheck == 0)
-            {
-                ;
+                right(); o--;
             }
         }
     }
@@ -531,173 +435,66 @@ int main()
     {
         if (o==0)
         {
-            if (l_wallcheck == 1 && f_wallcheck == 1 && r_wallcheck == 1)
+            if (l_wallcheck == 0)
             {
-                ;
+                left(); o++;
             }
-
-            else if (l_wallcheck == 1 && f_wallcheck == 1 && r_wallcheck == 0)
+            else if (f_wallcheck == 0)
             {
-                ;
+                forward(); y--;
             }
-
-            else if (l_wallcheck == 1 && f_wallcheck == 0 && r_wallcheck == 1)
+            else if (r_wallcheck == 0)
             {
-                ;
-            }
-
-            else if (l_wallcheck == 0 && f_wallcheck == 1 && r_wallcheck == 1)
-            {
-                ;
-            }
-
-            else if (l_wallcheck == 0 && f_wallcheck == 0 && r_wallcheck == 1)
-            {
-                ;
-            }
-
-            else if (l_wallcheck == 0 && f_wallcheck == 1 && r_wallcheck == 0)
-            {
-                ;
-            }
-
-            else if (l_wallcheck == 1 && f_wallcheck == 0 && r_wallcheck == 0)
-            {
-                ;
-            }
-
-            else if (l_wallcheck == 0 && f_wallcheck == 0 && r_wallcheck == 0)
-            {
-                ;
-            }
+                right(); o--;
+            }            
         }
 
         if (o==1)
         {
-            if (l_wallcheck == 1 && f_wallcheck == 1 && r_wallcheck == 1)
+            if (f_wallcheck == 0)
             {
-                ;
+                forward(); x--;
             }
-
-            else if (l_wallcheck == 1 && f_wallcheck == 1 && r_wallcheck == 0)
+            else if (l_wallcheck == 0)
             {
-                ;
+                left(); o++;
             }
-
-            else if (l_wallcheck == 1 && f_wallcheck == 0 && r_wallcheck == 1)
+            else if (r_wallcheck == 0)
             {
-                ;
-            }
-
-            else if (l_wallcheck == 0 && f_wallcheck == 1 && r_wallcheck == 1)
-            {
-                ;
-            }
-
-            else if (l_wallcheck == 0 && f_wallcheck == 0 && r_wallcheck == 1)
-            {
-                ;
-            }
-
-            else if (l_wallcheck == 0 && f_wallcheck == 1 && r_wallcheck == 0)
-            {
-                ;
-            }
-
-            else if (l_wallcheck == 1 && f_wallcheck == 0 && r_wallcheck == 0)
-            {
-                ;
-            }
-
-            else if (l_wallcheck == 0 && f_wallcheck == 0 && r_wallcheck == 0)
-            {
-                ;
+                right(); o--;
             }
         }
 
         if (o==2)
         {
-            if (l_wallcheck == 1 && f_wallcheck == 1 && r_wallcheck == 1)
+            if (r_wallcheck == 0)
             {
-                ;
+                right(); o--;
             }
-
-            else if (l_wallcheck == 1 && f_wallcheck == 1 && r_wallcheck == 0)
+            else if (f_wallcheck == 0)
             {
-                ;
+                forward(); y++
             }
-
-            else if (l_wallcheck == 1 && f_wallcheck == 0 && r_wallcheck == 1)
+            else if (l_wallcheck == 0)
             {
-                ;
+                left(); o++;
             }
-
-            else if (l_wallcheck == 0 && f_wallcheck == 1 && r_wallcheck == 1)
-            {
-                ;
-            }
-
-            else if (l_wallcheck == 0 && f_wallcheck == 0 && r_wallcheck == 1)
-            {
-                ;
-            }
-
-            else if (l_wallcheck == 0 && f_wallcheck == 1 && r_wallcheck == 0)
-            {
-                ;
-            }
-
-            else if (l_wallcheck == 1 && f_wallcheck == 0 && r_wallcheck == 0)
-            {
-                ;
-            }
-
-            else if (l_wallcheck == 0 && f_wallcheck == 0 && r_wallcheck == 0)
-            {
-                ;
-            }
+            
         }
 
         if (o==3)
         {
-            if (l_wallcheck == 1 && f_wallcheck == 1 && r_wallcheck == 1)
+            if (r_wallcheck == 0)
             {
-                ;
+                right(); o--;
             }
-
-            else if (l_wallcheck == 1 && f_wallcheck == 1 && r_wallcheck == 0)
+            else if (f_wallcheck == 0)
             {
-                ;
+                forward(); x++;
             }
-
-            else if (l_wallcheck == 1 && f_wallcheck == 0 && r_wallcheck == 1)
+            else if (l_wallcheck == 0)
             {
-                ;
-            }
-
-            else if (l_wallcheck == 0 && f_wallcheck == 1 && r_wallcheck == 1)
-            {
-                ;
-            }
-
-            else if (l_wallcheck == 0 && f_wallcheck == 0 && r_wallcheck == 1)
-            {
-                ;
-            }
-
-            else if (l_wallcheck == 0 && f_wallcheck == 1 && r_wallcheck == 0)
-            {
-                ;
-            }
-
-            else if (l_wallcheck == 1 && f_wallcheck == 0 && r_wallcheck == 0)
-            {
-                ;
-            }
-
-            else if (l_wallcheck == 0 && f_wallcheck == 0 && r_wallcheck == 0)
-            {
-                ;
+                left(); o++;
             }
         }
     }
@@ -706,44 +503,17 @@ int main()
     {
         if (o==0)
         {
-            if (l_wallcheck == 1 && f_wallcheck == 1 && r_wallcheck == 1)
+            if (l_wallcheck == 0)
             {
-                ;
+                left(); o--;
             }
-
-            else if (l_wallcheck == 1 && f_wallcheck == 1 && r_wallcheck == 0)
+            else if (f_wallcheck == 0)
             {
-                ;
+                
             }
-
             else if (l_wallcheck == 1 && f_wallcheck == 0 && r_wallcheck == 1)
             {
-                ;
-            }
-
-            else if (l_wallcheck == 0 && f_wallcheck == 1 && r_wallcheck == 1)
-            {
-                ;
-            }
-
-            else if (l_wallcheck == 0 && f_wallcheck == 0 && r_wallcheck == 1)
-            {
-                ;
-            }
-
-            else if (l_wallcheck == 0 && f_wallcheck == 1 && r_wallcheck == 0)
-            {
-                ;
-            }
-
-            else if (l_wallcheck == 1 && f_wallcheck == 0 && r_wallcheck == 0)
-            {
-                ;
-            }
-
-            else if (l_wallcheck == 0 && f_wallcheck == 0 && r_wallcheck == 0)
-            {
-                ;
+                
             }
         }
 
