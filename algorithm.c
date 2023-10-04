@@ -4,6 +4,17 @@
 #define maze_size 6 
 
 
+
+
+
+
+
+
+
+
+
+
+
 int maze[maze_size][maze_size] = 
 {
     {1,1,    1,   1,     1,1},
@@ -28,7 +39,10 @@ int maze[maze_size][maze_size] =
 //               1--- ---3                                      
 //                   |                                    
 //                   2                                       
-int x = 0, y = 0, o = 0; // x and y are the coordinates of the robot, o is the orientation of the robot
+int x = 0, y = 0; //starting position coordinates
+int  o = 0; //starting orientation
+
+
 int main()
 {
 
