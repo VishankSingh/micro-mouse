@@ -1,5 +1,5 @@
-#include "movement.h"
-#include "sensor.h"
+#include "movement.hpp"
+#include "sensor.hpp"
 
 #define maze_size 6 
 
