@@ -322,6 +322,11 @@ void forward(){
 
 void left(){
   drive(2);
+  
+ // the rotation speed will be proportional to the difference of target angle and present angle
+ // this is done so as to ensure a perfect 90* turn 
+  
+  
 }
  
 void right(){
